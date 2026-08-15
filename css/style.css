@@ -530,7 +530,14 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
 
 .impact-list ul { display: flex; flex-direction: column; gap: 26px; }
 .impact-list li { padding-left: 20px; border-left: 2px solid var(--border); }
-.impact-list h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.impact-list h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.impact-list__icon { color: var(--accent-2); flex-shrink: 0; }
 .impact-list p { color: var(--text-secondary); font-size: 0.94rem; }
 
 /* ============ SKILLS ============ */
@@ -563,14 +570,7 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
 .skill-group:hover::before { opacity: 1; }
 .skill-group:hover { border-color: rgba(45,212,191,0.3); transform: translateY(-2px); }
 .skill-group > * { position: relative; z-index: 1; }
-.skill-group h3 {
-  font-size: 1rem;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.skill-group__icon { color: var(--accent); font-size: 0.7rem; }
+.skill-group h3 { font-size: 1rem; margin-bottom: 16px; }
 
 .cert-strip {
   display: grid;
